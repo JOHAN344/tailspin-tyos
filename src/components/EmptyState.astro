@@ -8,10 +8,10 @@ const { text } = Astro.props;
 
 <div
     data-testid="empty-state"
-    class="text-center py-12 bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700"
+    class="netflix-empty-state text-center py-12 backdrop-blur-sm rounded-xl border"
 >
     {text ? (
-        <p data-testid="empty-state-text" class="text-slate-300">{text}</p>
+        <p data-testid="empty-state-text" class="netflix-muted">{text}</p>
     ) : (
         <slot />
     )}
