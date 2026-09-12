@@ -1,0 +1,87 @@
+:root {
+    --netflix-black: #141414;
+    --netflix-black-soft: #181818;
+    --netflix-red: #ff6b72;
+    --netflix-red-dark: #b20710;
+    --netflix-white: #f5f5f1;
+    --netflix-gray: #b3b3b3;
+    --netflix-border: #333333;
+}
+
+.netflix-page {
+    background-color: var(--netflix-black);
+    color: var(--netflix-white);
+}
+
+.netflix-header {
+    background: linear-gradient(90deg, var(--netflix-black) 0%, var(--netflix-red-dark) 100%);
+}
+
+.netflix-menu {
+    background-color: var(--netflix-black-soft);
+    border: 1px solid var(--netflix-border);
+}
+
+.netflix-menu a {
+    color: var(--netflix-white);
+}
+
+.netflix-menu a:hover {
+    background-color: var(--netflix-red-dark);
+}
+
+.netflix-card,
+.netflix-panel,
+.netflix-empty-state {
+    background-color: rgb(24 24 24 / 0.92);
+    border-color: var(--netflix-border);
+}
+
+.netflix-card:hover {
+    border-color: var(--netflix-red);
+    box-shadow: 0 12px 30px rgb(229 9 20 / 0.18);
+}
+
+.netflix-card-title {
+    color: var(--netflix-white);
+}
+
+.netflix-card:hover .netflix-card-title {
+    color: var(--netflix-red);
+}
+
+.netflix-accent {
+    color: var(--netflix-red);
+}
+
+.netflix-muted {
+    color: var(--netflix-gray);
+}
+
+.netflix-tag-blue,
+.netflix-tag-purple,
+.netflix-rating {
+    background-color: rgb(178 7 16 / 0.35);
+    color: var(--netflix-white);
+}
+
+.netflix-tag-purple {
+    background-color: rgb(229 9 20 / 0.25);
+}
+
+.netflix-button {
+    background-color: var(--netflix-red-dark);
+}
+
+.netflix-button:hover {
+    background-color: #8f0710;
+}
+
+.netflix-focus:focus {
+    --tw-ring-color: var(--netflix-red);
+}
+
+::selection {
+    background-color: var(--netflix-red);
+    color: var(--netflix-white);
+}
